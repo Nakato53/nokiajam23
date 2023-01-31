@@ -9,7 +9,7 @@ export default class Kuru{
     _longeur = 20;
 
     update(delta:number){
-        this._rotation = this._rotation + this._rotationSpeed;
+        this._rotation = this._rotation + this._rotationSpeed+1*delta;
         if(this._rotation > 360) this._rotation -= 360;
         if(this._rotation < 0) this._rotation += 360;
     }
