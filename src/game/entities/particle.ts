@@ -17,7 +17,7 @@ export default class Particle {
         this.lifetime = lifetime;
     }
 
-    public update(delta:number){
+    public update(_delta:number){
         this.lifetime--;
         this.x += this.vx;
         this.y += this.vy;

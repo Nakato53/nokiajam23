@@ -31,7 +31,7 @@ export class LevelManager {
         this._levels.push(LEVEL1 as ILevel);
     }
 
-    public load(level_name:String){
+    public load(_level_name:String){
         //var level = require("./../../levels/"+level_name+".json")
         console.log(LEVEL1);
     }
