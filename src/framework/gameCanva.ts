@@ -18,14 +18,16 @@ export default class gameCanvas {
         canvas.style.height = Math.floor(GAME_HEIGHT*GAME_SCALE) + "px";
         
         canvas.style.imageRendering = 'pixelated';
-        canvas.style.imageRendering = '-webkit-optimize-contrast';
+     //   canvas.style.textRendering = 'geometricPrecision';
         canvas.width = GAME_WIDTH;
         canvas.height = GAME_HEIGHT;
 
         this._context = canvas.getContext('2d') as CanvasRenderingContext2D;
-        this._context.fillStyle = 'white';
+        this._context.imageSmoothingEnabled = false;
+        
+        this._context.translate(0, 0);
         this._update = update
-
+        
         Mouse.bindEvent(canvas);
         Keyboard.bindEvents();
     }
