@@ -1,12 +1,14 @@
 import { GAME_HEIGHT, GAME_WIDTH } from "../config";
 import Color from "../framework/color";
 import SCENEMANAGER from "./managers/scenemanager";
+import GameOverScene from "./scenes/gameoverscene";
 import GameScene from "./scenes/gamescene";
 export default class Game{
 
 
     constructor(){       
         SCENEMANAGER.pushScene(new GameScene());
+        SCENEMANAGER.pushScene(new GameOverScene());
     }
 
     update(delta:number){

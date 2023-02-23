@@ -18,7 +18,7 @@ export default class gameCanvas {
         canvas.style.height = Math.floor(GAME_HEIGHT*GAME_SCALE) + "px";
         
         canvas.style.imageRendering = 'pixelated';
-     //   canvas.style.textRendering = 'geometricPrecision';
+        canvas.style.textRendering = 'geometricPrecision';
         canvas.width = GAME_WIDTH;
         canvas.height = GAME_HEIGHT;
 

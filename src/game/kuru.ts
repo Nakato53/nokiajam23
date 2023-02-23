@@ -37,11 +37,11 @@ export default class Kuru{
 
         //UI
         context.beginPath();
-        context.fillRect(2,2,2,2);
 
-        context.fillRect(6,2,2,2);
-
-        context.fillRect(10,2,2,2);
+        context.fillStyle = Color.NokiaColorTwo.ToHEX();
+        for (let index = 0; index < this._life; index++) {
+            context.fillRect(2+index*4,2,2,2);   
+        }
         context.closePath();
     }
 
